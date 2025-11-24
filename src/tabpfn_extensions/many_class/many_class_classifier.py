@@ -193,6 +193,7 @@ class ManyClassClassifier(BaseEstimator, ClassifierMixin):
             X,
             y,
             ensure_all_finite=False,
+            dtype=None,
         )
 
         self.fit_params_ = dict(fit_params)

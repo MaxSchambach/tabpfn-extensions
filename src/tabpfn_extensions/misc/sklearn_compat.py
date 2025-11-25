@@ -414,6 +414,7 @@ if sklearn_version < parse_version("1.6"):
         See the original scikit-learn documentation:
         https://scikit-learn.org/stable/modules/generated/sklearn.utils.validation.validate_data.html#sklearn.utils.validation.validate_data
         """
+        print("DEBUG: USING SKLEARN VAL DATA PATCH")
         if skip_check_array:
             _check_n_features(_estimator, X, reset=reset)
             _check_feature_names(_estimator, X, reset=reset)

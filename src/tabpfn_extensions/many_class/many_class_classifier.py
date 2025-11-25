@@ -188,6 +188,7 @@ class ManyClassClassifier(BaseEstimator, ClassifierMixin):
         self._row_weighter = make_row_weighter(self._row_weighting_config)
         self.log_proba_aggregation = self._aggregation_config.log_likelihood
 
+        print("DEBUG: USING DTYPE=NONE FIX OF MANY CLASS EXTENSION")
         X_validated, y_validated = validate_data(
             self,
             X,
